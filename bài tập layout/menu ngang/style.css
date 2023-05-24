@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu li {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    background-color: rgb(254, 246, 93);
+    line-height: 30px;
+    cursor: context-menu;
+    margin: 15px;
+    /* 
+     cursor: kiểu con chỏ
+    */
+    list-style: none;
+}
+
+#menu li a {
+    
+
+    /*
+    text-decoration-line ---- Vị trí đường trang trí.
+    text-decoration-color --- Màu đường trang trí.
+    text-decoration-style --- Kiểu đường trang trí.
+
+    
+    */
+    text-decoration: none;
+    /* không tạo đường trang trí */
+    color: rgb(243, 7, 7);
+    display: block;
+    
+    text-align: center;
+    line-height: 30px;
+   
+    margin-left: 10px;
+  
+    line-height: 30px;
+
+
+
+
+}
+
+#menu ul ul li a {
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#menu li a:hover {
+    background-color: red;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
+#menu ul li:hover ul{
+    visibility: visible;
+    
+}

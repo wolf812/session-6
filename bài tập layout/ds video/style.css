@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container
+{
+    padding: 20px;
+    margin: 5px;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: ;
+}
+.container ul{
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.container ul li{
+    margin: 20px;
+}
+iframe{
+    margin: 5px 0 5px 30px;
+}

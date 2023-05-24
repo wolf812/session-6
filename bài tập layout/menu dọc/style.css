@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu,
+#menu ul,
+#menu li {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    list-style: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: rgb(107, 175, 73);
+    line-height: 30px;
+    cursor: auto;
+}
+
+#menu li a {
+
+    /*
+    text-decoration-line ---- Vị trí đường trang trí.
+    text-decoration-color --- Màu đường trang trí.
+    text-decoration-style --- Kiểu đường trang trí.
+
+    
+    */
+    text-decoration: none;
+    color: white;
+}
+
+#menu li:hover {
+    background-color: red;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 0;
+    left: 140px;
+    visibility: hidden;
+    /*
+    display:none -  thì ẩn nguyên cái phần tử HTML.
+    visibility:hidden -  chỉ ẩn nội dung của phần tử HTML, nhưng vẫn sẽ hiện thị khoảng trắng ở vị trí của phần tử đó.
+    */
+}
+
+#menu ul li:hover ul {
+    visibility: visible;
+    z-index: 999;
+}
